@@ -72,7 +72,7 @@ console.log(intern5.gender);
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 const kennan = intern2;
 
-kennan.speak = function() {
+kennan.speak = function () {
 	return "Hello my name is " + this.name;
 };
 
@@ -82,7 +82,7 @@ console.log(kennan.speak());
 //console.log(antonietta.multiplyNums(3,4));
 const antonietta = intern5;
 
-antonietta.multiplyNums = function(num1, num2) {
+antonietta.multiplyNums = function (num1, num2) {
 	return num1 * num2;
 };
 
