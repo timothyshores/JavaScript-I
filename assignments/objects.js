@@ -73,7 +73,7 @@ console.log(intern5.gender);
 const kennan = intern2;
 
 kennan.speak = function () {
-	return "Hello my name is " + this.name;
+	return `Hello my name is ${this.name}`;
 };
 
 console.log(kennan.speak());
@@ -101,19 +101,24 @@ const parent = {
 	name: "Susan",
 	age: 70,
 	speak: function () {
-		return "Hello my name is " + this.name;
+		// return "Hello my name is " + this.name;
+		return `Hello my name is ${ this.name }`;
+
 	},
 	child: {
 		name: "George",
 		age: 50,
 		speak: function () {
-			return "Hello my name is " + this.name;
+			return `Hello my name is ${ this.name }`;
+
 		},
 		grandchild: {
 			name: "Sam",
 			age: 30,
 			speak: function () {
 				return "Hello my name is " + this.name;
+				return `Hello my name is ${ this.name }`;
+
 			}
 		}
 	}

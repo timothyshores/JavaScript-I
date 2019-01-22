@@ -319,13 +319,15 @@ console.log(inventory[32].car_make);
 // console.log(`Car 33 is a *car year goes here* *car make goes here* *car model goes here*` ); 
 let car33 = inventory[32];
 
-console.log('Car 33 is a ' + car33.car_year + ' ' + car33.car_make + ' ' + car33.car_model + '.');
+// console.log('Car 33 is a ' + car33.car_year + ' ' + car33.car_make + ' ' + car33.car_model + '.');
+console.log(`Car 33 is a ${car33.car_year} ${car33.car_make}  ${car33.car_model}.`);
+
 
 // ==== Challenge 2 ====
 // The dealer needs the information on the last car in their inventory.  What is the make and model of the last car in the inventory?  Log the make and model into the console.
 let lastCar = inventory[inventory.length - 1];
 
-console.log('The last car in the inventory is a ' + lastCar.car_year + ' ' + lastCar.car_make + ' ' + lastCar.car_model + '.');
+console.log(`The last car in the inventory is a ${lastCar.car_year} ${lastCar.car_make} ${lastCar.car_model}.`);
 
 // ==== Challenge 3 ====
 // The marketing team wants the car models listed alphabetically on the website. Sort all the car model names into alphabetical order and log the results in the console
@@ -352,5 +354,5 @@ let BMWAndAudi = inventory.filter(function (car) {
     if (car.car_make == 'BMW' || car.car_make == 'Audi') {
         return true;
     }
-});;
+});
 console.log(BMWAndAudi);
